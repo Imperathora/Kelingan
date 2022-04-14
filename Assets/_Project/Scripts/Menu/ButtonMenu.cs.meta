@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 1b16194cafee2b240ab9ec94e4bc05de
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_firstButton: {instanceID: 0}
+  - m_openOptionsButton: {instanceID: 0}
+  - m_closeOptionsButton: {instanceID: 0}
+  - m_openControlsButton: {instanceID: 0}
+  - m_closeControlsButton: {instanceID: 0}
+  - m_openCreditsButton: {instanceID: 0}
+  - m_closeCreditsButton: {instanceID: 0}
+  - m_optionsMenu: {instanceID: 0}
+  - m_creditsMenu: {instanceID: 0}
+  - m_titleScreen: {instanceID: 0}
+  - m_mainMenu: {instanceID: 0}
+  - m_controlsMenu: {instanceID: 0}
+  - m_UIInputHandler: {fileID: 11400000, guid: 3281633a9acd159458dbe8aec6db9623, type: 2}
+  - m_characterInputHandler: {fileID: 11400000, guid: 33efb8dd90557d0439df9a44e34ced67,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

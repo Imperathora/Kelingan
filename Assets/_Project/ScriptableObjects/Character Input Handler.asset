@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f08e6e74daef60499be8ec07f172fd2, type: 3}
+  m_Name: Character Input Handler
+  m_EditorClassIdentifier: 
+  OnInput: {fileID: 11400000, guid: 2eb2d423aecf0f948a5df019772cf717, type: 2}
+  m_singleInputActions:
+  - m_actionID: Interact
+    OnButtonPressed: {fileID: 11400000, guid: 5aa9376593563c24bae98a6631de8383, type: 2}
+  m_doubleInputActions:
+  - m_actionID: Jump
+    OnButtonPressed: {fileID: 11400000, guid: 745bd575d55efe648994b1420b354376, type: 2}
+    OnButtonReleased: {fileID: 11400000, guid: 99ee903449761334ea2917a4febaf590, type: 2}
+  - m_actionID: Dash
+    OnButtonPressed: {fileID: 11400000, guid: 3c3982a6ed0541e468869d3e0dd0b864, type: 2}
+    OnButtonReleased: {fileID: 11400000, guid: b3d8d7e1d005b8546a1c67ebbca25f6d, type: 2}
+  - m_actionID: Void
+    OnButtonPressed: {fileID: 11400000, guid: 4dec3a00b5c033c4a90cf08f340f06ef, type: 2}
+    OnButtonReleased: {fileID: 11400000, guid: 5d124bf90c356084f917886220e766df, type: 2}
+  - m_actionID: MoveDown
+    OnButtonPressed: {fileID: 11400000, guid: ea824ac29ee1d3d4782a5a39da981f62, type: 2}
+    OnButtonReleased: {fileID: 11400000, guid: f0d271d961acedf4dad32707c574fadc, type: 2}
+  - m_actionID: Sprint
+    OnButtonPressed: {fileID: 11400000, guid: 6b2d4935fe24ee94db3582ba60430b0e, type: 2}
+    OnButtonReleased: {fileID: 11400000, guid: 064b368ea9664ee4cb9564db1701dfe2, type: 2}
+  m_axisInputActions:
+  - m_actionID: MoveHorizontal
+    m_inputAxis: {fileID: 11400000, guid: e61c8fb857a18e3469c91d8eac07dc02, type: 2}
+  - m_actionID: MoveVertical
+    m_inputAxis: {fileID: 11400000, guid: 7ee71ecdd2a6f334eac8b759c30b81c6, type: 2}
+  - m_actionID: CameraHorizontal
+    m_inputAxis: {fileID: 11400000, guid: 75a8cb5ded708a343a80e255065814a7, type: 2}
+  - m_actionID: CameraVertical
+    m_inputAxis: {fileID: 11400000, guid: 880d894064fc9904e8bd9f64aa882271, type: 2}
+  - m_actionID: MouseHorizontal
+    m_inputAxis: {fileID: 11400000, guid: b200e40e6361e0f43af295c96a866c65, type: 2}
+  - m_actionID: MouseVertical
+    m_inputAxis: {fileID: 11400000, guid: 073013ef89d106442953e6b65b6b0b81, type: 2}

@@ -1,0 +1,140 @@
+Below are instructions on the shaders and their purpose.
+This is solely for readability and in order to facilitate
+the usability of the shaders and the folders herein.
+
+1.	Folder Structure
+    There are 4 folders, relevant are only the materials folder and - if needed- the texture folder.
+
+    1.1.	Material Folder
+        Each material is assigned to an eponymous shader.
+        The creation of a new material is only necessary when settings (as in either texture or values) 
+		need to differ. 
+        Materials should always be named according to their corresponding shader(graph).
+        It is advisable to add the suffix -material or -mat to each material to heighten the readability.
+
+    1.2.	Shadergraph and Subgraph Folder
+        The shadergraphs and subgraphs of these shaders are stored here. There is no need to edit these. 
+
+    1.3.	TestMaterials Folder
+        Herein are materials solely used for testing shaders. The use of these will not be explained further.
+
+    1.4.	Texture Folder
+        The textures required for certain shaders and materials are stored here. 
+		Since some materials’ textures can be changed, it is vital that these new textures are also 
+		stored in this folder.  
+
+
+2.	How To Use Shaders/Materials
+    To use a shader a material must be applied to the object. 
+    Hereby it is important to remember that a material is assigned to a shader. 
+	While in the inspector of an object this should NEVER be changed since it is easy to override 
+	the material on the object if the material is not the corresponding (to the shader). 
+	Meaning it can be quite difficult to track down this error. 
+    Settings on materials are global. So, each object the materialshader is applied 
+	on has the same settings. 
+	If different settings are required for a certain object it is mandatory to create a new material
+	with the desired configuration. 
+    To apply a shader to a new material, simply select the required shader in the inspector under 
+	Shader – Shader Graphs.
+
+
+3.	Materials
+    3.1.	Blur_Material
+        The Blur_Material can be used to blur areas/objects that are located behind the object
+	    the effect is applied to. 
+        The BlurValue can be adjusted at will. The default value is 0.03
+
+    3.2.	Boundaries_Dissolve_Material
+	    The Boundaries_Dissolve_Material can be used to visualize the barrier in terms of changing 
+		colors and a certain rhythm. The noise_Scale and the time can be adjusted. 
+        The noise_Scale determines how big the generated noise map is. The default is 1
+        The time value determines how fast the floating effect looks. The default is 1
+
+    3.3.	CrackedIce_Material
+	    The CrackedIce_Material visualizes the surface of an ice plane. 
+		Here the values are mostly dependent upon each other, meaning that changing one can also 
+		impact another.
+		The following textures can be changed:
+		TextureCrackMask: This is the mask of the cracks on the ice
+		TextureAlbedo: This is the overall texture, shown most prominently 
+		TextureNoise: This noise texture is a simple perlin noise and adds depth to the shader
+		TextureNormal: The corresponding normal map to the albedo
+		TextureRoughness: The roughness for the cracks and the ice in general
+
+		The following values can be changed:
+		ParallaxOffset: This is the value of the parallax effect as seen on the cracks. 
+		                It adds to the depth of the ice. The default value is 0.003. 
+						Here it is advisable to keep the effect minimal
+         IceBrightness: The ice brightness influences the parallax of the cracks. 
+		                A value under 0 colors the cracks black and makes the ice brighter, 
+						while a value over 0 darkens the ice and brightens the cracks. The default is 0.1
+		Greenness/Redness/Blueness: These influence the tint of the ice. The default values are 0.02/0/1
+		PowerOfFresnel: In general, the Fresnel effect differs reflectance on a surface depending on the 
+		                viewing angle. More is light is reflected when the grazing angle is approached. 
+						Only small values are advised to be used. The default value is 0. 
+
+    3.4.	DissolveWater_Mat
+	    The DissolveWater_Mat is to achieve a flowing water effect, that also distorts the 
+		object/ areas behind the object. 
+		The DistanceDissolveTarget Script can be attached to this material, meaning it can dissolve on 
+		contact with the player. 
+		!Do not change the Position Value! 
+		It is exposed solely for scripting purposes. 
+		The following values can be changed:
+		Distance: This is the distance between an object tagged player and this object. It is a script value. 
+				  The greater the distance the earlier the material dissolves upon contact. 
+				  The default is 2
+		SpeedNormal: This determines the flow speed and general direction of the normal map. 
+		             Above 0 it flows upwards and below 0 it flows downwards. The default value is 0.1
+		SpeedTex: This changes the speed of the cloud effect on the material. The default is 1/1
+		SpeedFlow_1/ SpeedFlow_2: To achieve the effect of a seemingly chaotic flow two textures are used. 
+		                          The default values are: 0.13/0.26 for Flow_1 and 0.34/0.12 for Flow_2
+		LerpColor_1/LerpColor_2: The cracks colors are lerping between two color values. 
+		                         These can be changed at will. The default values are #0031FF and #00FFE8
+        DistortionTex: This is the texture that creates the flow of the distortion effect. It can be changed at will but is its
+		               necessary that this texture provides RGBA channels.
+	    NormalTex: This texture controls the distortion effect. To control how much is visible behind the object this 
+		           must be changed
+		Texture_2D: This texture is projected onto the plane and to achieve the desired effect please make sure this texture 
+		            is the corresponding one to the normal map. 
+
+    3.5.	LevelBoundaries_Ice_Material
+	    The LevelBoundaries_Ice_Material visualizes the dynamic ice cracks for the level border.
+		The DistanceDissolveTarget Script can be attached to this material, meaning it can dissolve on 
+		contact with the player. 
+		!Do not change the Position Value! 
+		It is exposed solely for scripting purposes. 
+		The textures are not exposed here because they are implemented for this specific type of crack 
+		texture. 
+		The following values can be changed:
+		Distance: This is the distance between an object tagged player and this object. It is a script value.
+		          The greater the distance the earlier the material dissolves upon contact. The default is 2
+		EdgeWidth: This describes the width of the color of the cracks. 
+	               The lower the number the less the cracks are visible. The default value is 30
+		FrequencyColor: This determines the frequency speed of the color change. It is faster the higher 
+		                the number. The default value is 0.5
+		EdgeColor: This is the color on which the cracks are projected. Its default value is #FFFFFF
+		SpeedFlow_1/ SpeedFlow_2: To achieve the effect of a seemingly chaotic flow two textures are used. 
+		                          The default values are: 0.13/0.26 for Flow_1 and 0.34/0.12 for Flow_2
+		LerpColor_1/LerpColor_2: The cracks colors are lerping between two color values. 
+                                 These can be changed at will. The default values are #0031FF and #00FFE8
+
+	3.6. Portal_Material
+	    The Portal_Material is used to simulate a portal effect.
+		The following values can be changed:
+		TwirlStrength: This value simulates the strength of the portal twirl and the direction of it. The default value is 10.
+		Scale: This describes the scale of the voronoi effect that influences the twirl. The default value is 3
+		SpeedPortal: The determines the speed of the twirl. The default value is 0.5
+		Mask: This is a texture that influences the placement of the portal twirl. The default texture is unitys default 
+		      particle texture
+		ColorPortal: This sets the color of the portal. 
+		DissolveAmount_Portal: The dissolve amount is controlled here. For a value less than 0 it appears brighter and therefore
+		                       it does not dissolve that much. For a positive value it dissolves more and appears more dull.
+
+    3.7. SnowTest_Material
+	    The SnowTest_Material is used to simulate fallen powder snow.  
+		The following values/ textures can be altered:
+		BaseMap: This is the base texture the snow is applied on. It can be changed to any texture. 
+		SnowDirection: The direction of the snow is determined here. 
+		               The X, Y and Z are the different directions. 
+		SnowOpacity: This determines the opacity of the snow. Its default is 0.5

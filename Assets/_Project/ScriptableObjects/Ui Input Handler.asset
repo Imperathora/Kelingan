@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f08e6e74daef60499be8ec07f172fd2, type: 3}
+  m_Name: Ui Input Handler
+  m_EditorClassIdentifier: 
+  OnInput: {fileID: 11400000, guid: 2eb2d423aecf0f948a5df019772cf717, type: 2}
+  m_singleInputActions:
+  - m_actionID: UICancel
+    OnButtonPressed: {fileID: 11400000, guid: 374f6776668ac074fbfa70ee09b7006d, type: 2}
+  - m_actionID: UISubmit
+    OnButtonPressed: {fileID: 11400000, guid: 1d052bea3e0a4334399240acd2c5080c, type: 2}
+  - m_actionID: MenuToggle
+    OnButtonPressed: {fileID: 11400000, guid: 7a32481a415f2af4294fa0f048ab9b50, type: 2}
+  m_doubleInputActions: []
+  m_axisInputActions:
+  - m_actionID: UIHorizontal
+    m_inputAxis: {fileID: 11400000, guid: aa8d2e44b5b227247a550cc2ac7fb3ec, type: 2}
+  - m_actionID: UIVertical
+    m_inputAxis: {fileID: 11400000, guid: d3ed6d7ae8b18814d9df59a583c237e8, type: 2}

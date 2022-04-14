@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 8f1f2662f3b108e43ae0f017eda1102f
+=======
+guid: 40a560e72062f27439c8fca6c8853efa
+>>>>>>> LevelDesign
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

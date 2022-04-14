@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0c686784557a84db48c662d840e135, type: 3}
+  m_Name: World Movement Balancing
+  m_EditorClassIdentifier: 
+  m_turnMode: 1
+  m_turnSpeed: 30
+  m_groundAcceleration: 120
+  m_groundMaxSpeed: 9
+  m_sprintAcceleration: 350
+  m_aerialAcceleration: 60
+  m_aerialMaxSpeed: 12
+  m_aerialDeaccelerate: 0.035
+  m_jumpForce: 45
+  m_maxJumpVelocity: 25
+  m_secondJumpForce: 30
+  m_secondJumpInterruptionAngle: 45
+  m_jumpTime: 0.3
+  m_forceMode: 5
+  m_delayedJumpTimer: 0
+  m_gravity: 60
+  m_gravityMaxVelocity: 60
+  m_drag: 10
+  m_minSpeed: 7
+  m_dashDistance: 5
+  m_dashTime: 0.15
+  m_dashCooldown: 0.4
+  m_dashGravity: 5
+  m_minStickIntensity: 0.5
+  m_slowTime: 0.8
+  m_steepDegree: 0.77
+  m_slideForce: 400

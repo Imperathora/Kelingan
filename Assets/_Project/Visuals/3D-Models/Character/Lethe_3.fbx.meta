@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 1a29b931f7c81534d84a39c4fc79f052
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Antler_002
+    100002: Antler_003
+    100004: Button_001
+    100006: Button_007
+    100008: Button_008
+    100010: Cloak
+    100012: Hair001
+    100014: //RootNode
+    100016: MainBody
+    100018: Mask001
+    100020: Scarf_low
+    400000: Antler_002
+    400002: Antler_003
+    400004: Button_001
+    400006: Button_007
+    400008: Button_008
+    400010: Cloak
+    400012: Hair001
+    400014: //RootNode
+    400016: MainBody
+    400018: Mask001
+    400020: Scarf_low
+    2100000: No Name
+    2300000: Antler_002
+    2300002: Antler_003
+    2300004: Button_001
+    2300006: Button_007
+    2300008: Button_008
+    2300010: Cloak
+    2300012: Hair001
+    2300014: MainBody
+    2300016: Mask001
+    2300018: Scarf_low
+    3300000: Antler_002
+    3300002: Antler_003
+    3300004: Button_001
+    3300006: Button_007
+    3300008: Button_008
+    3300010: Cloak
+    3300012: Hair001
+    3300014: MainBody
+    3300016: Mask001
+    3300018: Scarf_low
+    4300000: MainBody
+    4300002: Cloak
+    4300004: Scarf_low
+    4300006: Button_001
+    4300008: Antler_002
+    4300010: Hair001
+    4300012: Mask001
+    4300014: Antler_003
+    4300016: Button_007
+    4300018: Button_008
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

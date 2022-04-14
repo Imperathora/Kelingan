@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LevelBoundaries_Ice_Material
+  m_Shader: {fileID: 4800000, guid: 6c87b99e89703db40a7c4bc40898f931, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_111C4B69_Texture:
+        m_Texture: {fileID: 2800000, guid: e1e028ad05aac614684a694ea387883c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5166A30A_Texture:
+        m_Texture: {fileID: 2800000, guid: 4868d0ee638f36249a124664140f6c86, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_A571A2F5_Texture:
+        m_Texture: {fileID: 2800000, guid: f0352e110ef6e5b4ba1b91ab1eae4211, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_AEFE1B6E_Texture:
+        m_Texture: {fileID: 2800000, guid: f0352e110ef6e5b4ba1b91ab1eae4211, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_A21081EB_Out:
+        m_Texture: {fileID: 2800000, guid: dd032228cbae0f94ba514c1031f8412c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_B09F43B1_Out:
+        m_Texture: {fileID: 2800000, guid: dd032228cbae0f94ba514c1031f8412c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_B938C12C_Out:
+        m_Texture: {fileID: 2800000, guid: dd032228cbae0f94ba514c1031f8412c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_CB2D5E17_Out:
+        m_Texture: {fileID: 2800000, guid: dd032228cbae0f94ba514c1031f8412c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_E9B69B30_Out:
+        m_Texture: {fileID: 2800000, guid: dd032228cbae0f94ba514c1031f8412c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1CE157C5: 0.02
+    - Vector1_971FA938: 1
+    - Vector1_C49537AA: 0.5
+    - Vector1_D2DFF662: 1.5
+    - Vector1_D3909055: 5
+    - Vector1_DE163390: 1000
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _Distance: 2
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _ReceiveShadows: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    - _edgeWidth: 5
+    - _frequencyColor: 0.5
+    - _frequencyDissolve: 0.5
+    m_Colors:
+    - Color_575A86FA: {r: 0, g: 1782.8878, b: 1782.8878, a: 0}
+    - Color_B3A92E8F: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _edgeColor: {r: 1, g: 1, b: 1, a: 0}
+    - _lerpColor_1: {r: 0, g: 0.1927059, b: 1, a: 0}
+    - _lerpColor_2: {r: 0, g: 1, b: 0.9093275, a: 0}
+    - _speedFlow_1_Cracks: {r: 0.13, g: 0.26, b: 0, a: 0}
+    - _speedFlow_2_Cracks: {r: 0.34, g: 0.12, b: 0, a: 0}
